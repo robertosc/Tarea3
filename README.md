@@ -36,4 +36,9 @@ De modo que la función de densidad conjunta se modela por la siguiente ecuació
 
 ## Parte 4: Curvas de mejor ajuste para las funciones de densidad marginales
 
-Para esta sección se utilizó la función definida para retornar la ecuación gaussiana evaluada en un dominio deseado y con los parámetros para el caso. Puesto que se desea obtener una curva continua se debe utilizar un vector con bastantes puntos para obtener mayor precisión, utilizando la librería numpy y su función linspace se generó un espacio entre (5, 15) para X y (5, 25) para Y.
+Para esta sección se utilizó la función definida para retornar la ecuación gaussiana evaluada en un dominio deseado y con los parámetros mu y sigma para el caso. Puesto que se desea obtener una curva continua se debe utilizar un vector con bastantes puntos para obtener mayor precisión, utilizando la librería numpy y su función linspace se generó un espacio entre (5, 15) para X y (5, 25) para Y. Una vez se tienen las imágenes de la curva gaussiana se puede graficar con matplotlib.
+
+<img src="../master/images/curvax.png">
+
+
+<img src="../master/images/curvay.png">
