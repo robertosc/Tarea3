@@ -15,14 +15,17 @@ Los histogramas mostrados en las figuras previas se asemejan a una curva de dist
 
 En este caso la función de densidad conjunta se obtiene de manera analítica utilizando los resultados obtenidos de la curva de mejor ajuste de la parte 1, se obtuvo el valor de sigma y mu para la distribución de X y de Y. Por medio de la función de scipy  curve_fit se obtuvo lo siguiente:
 
-![](../master/images/datos.png)
+
+<img src="../master/images/datos.png" width="100">
 
 Asumiendo que los datos son independientes entre sí mismos, se tiene que la función de densidad marginal conjunta se puede obtener de la siguiente manera.
 
-![](../master/images/ec1.png)
+<img src="../master/images/ec1.png" width="150">
 
 Utilizando los datos obtenidos de mu y sigma se obtiene las ecuaciones de la PMF para la variable aleatoria X y Y, estas vienen dadas por
-![](../master/images/ec2.png)
+
+<img src="../master/images/ec2.png" width="150">
 
 De modo que la función de densidad conjunta se modela por la siguiente ecuación
-![](../master/images/ec3.png)
+
+<img src="../master/images/ec3.png" width="300">
