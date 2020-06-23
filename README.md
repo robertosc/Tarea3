@@ -32,7 +32,7 @@ De modo que la función de densidad conjunta se modela por la siguiente ecuació
 
 ## Parte 3: Parámetros de interés
 
-Para los datos se pidió obtener una serie de parámetros para anaizar diferentes aspectos. El primero que se halló fue la correlación entre las variables aleatorias. Este dato hare referencia a la similitud que existe entre dos o más variables aleatorias, en caso de que este parámetro sea cero o muy cercano a cero, se puede asumir que no hay similitud entre las variables o bien, los datos son ortogonales. Este parámetro en forma discreta se calcula de la siguiente manera:
+Para los datos se pidió obtener una serie de parámetros para anaizar diferentes aspectos. El primero que se halló fue la correlación entre las variables aleatorias. Este dato no dice mucha información por sí mismo, sin embargo es muy útil para halar la similitud entre la variables aleatorias al obtener la covarianza. Si este parámetro es cero o muy cercano a cero, se puede asumir que no hay similitud entre las variables o bien, los datos son ortogonales. Este parámetro en forma discreta se calcula de la siguiente manera:
 
 <img src="../master/images/ec4.png" width="300">
 
@@ -44,6 +44,23 @@ Para saber si los datos están correlacionados se halló el valor esperado de ca
 
 <img src="../master/images/ec5.png" width="150">
 
+<img src="../master/images/dato2.png" width="150">
+
+Puesto que ambos resultados son muy similares se puede asumir que los datos no están correlacionados. Este se puede confirmar con el dato de covarianza y el coeficiente de pearson. 
+
+La covarianza no dice que tan similares son dos variables aleatorias, si el valor de la covarianza tiende a 0, se puede decir que las variables no están correlacionadas. La covarianza se obtiene por medio de la siguiente ecuación:
+
+<img src="../master/images/ec6.png" width="300">
+
+De modo que se obtuvo que
+
+<img src="../master/images/dato3.png" width="100">
+
+El coeficiente de pearson es otra medida de qué tan relacionados se encuentran los datos, sin embargo da más información. Este parámetro dice sí los datos tienen una distribución lineal. Cuando el coeficiente es cercano a 1, se tiene una distribución con pendiente positiva y si fuera cercano o igual a -1, la pendiente de la distribución es negativa. En este caso, se confirma lo mencionado previamente respecto a a la correlación.
+
+<img src="../master/images/ec7.png" width="100">
+
+<img src="../master/images/dato4.png" width="100">
 
 
 
