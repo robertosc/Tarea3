@@ -34,15 +34,15 @@ De modo que la función de densidad conjunta se modela por la siguiente ecuació
 
 Para los datos se pidió obtener una serie de parámetros para anaizar diferentes aspectos. El primero que se halló fue la correlación entre las variables aleatorias. Este dato hare referencia a la similitud que existe entre dos o más variables aleatorias, en caso de que este parámetro sea cero o muy cercano a cero, se puede asumir que no hay similitud entre las variables o bien, los datos son ortogonales. Este parámetro en forma discreta se calcula de la siguiente manera:
 
-<img src="../master/images/ec3.png" width="400">
+<img src="../master/images/ec4.png" width="300">
 
 Para este cálculo se aprovechó la funcionalidad de la librería pandas, que permite multiplicar columnas entre sí. Puesto que se tenía un documento con los datos de la forma x,y,probabilidad, bastó con multiplicar estas columnas y luego obtener la sumatoria de la columna resultante. Se obtuvo el siguiente resultado:
 
-<img src="../master/images/ec3.png" width="400">
+<img src="../master/images/dato1.png" width="100">
 
 Para saber si los datos están correlacionados se halló el valor esperado de cada variable aleatoria por separado, se sabe que si se cumple la siguiente relación, los datos no están correlacionados.
 
-<img src="../master/images/ec3.png" width="400">
+<img src="../master/images/ec5.png" width="150">
 
 
 
