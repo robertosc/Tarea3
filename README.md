@@ -2,13 +2,13 @@
 
 ## Parte 1: modelo probabilístico para las funciones de densidad marginales de X y Y
 
-Se tiene una serie de datos de una variable aleatoria para los cuales se desea conocer su función de densidad marginal probabilística. Puesto que en este caso se cuenta con un fenómeno discreto, esta se obtiene mediante de la sumatoria de los valores en las fila de X y las columnas de Y, de modo que se obtiene la función probabilidad marginal en forma de un vector. Una vez realizados estos cálculos, se grafican los resultados en un histograma para cada una de las variables aleatorias.
+Se tiene una serie de datos de una variable aleatoria para los cuales se desea conocer su función de densidad marginal probabilística. Puesto que en este caso se cuenta con un fenómeno discreto, esta se obtiene mediante de la sumatoria de los valores en las filas de X y las columnas de Y, de modo que se obtiene la función de probabilidad marginal en forma de un vector. Una vez realizados estos cálculos, se grafican los resultados en un histograma para cada una de las variables aleatorias.
 
 ![](../master/images/densx.png)
 
 ![](../master/images/densy.png)
 
-Los histogramas mostrados en las figuras previas se asemejan a una curva de distribución normal, por lo tanto este será el la curva de ajusta que se buscará obtener en esta sección. Para ello se define una función que retorna un la ecuación gaussiana.
+Los histogramas mostrados en las figuras previas se asemejan a una curva de distribución normal, por lo tanto este será la curva de ajusta que se buscará obtener en la sección final de este reporte. Para ello se define una función que retorna un la ecuación gaussiana.
 
 
 ## Parte 2: función de densidad conjunta
@@ -32,7 +32,7 @@ De modo que la función de densidad conjunta se modela por la siguiente ecuació
 
 ## Parte 3: Parámetros de interés
 
-Para los datos se pidió obtener una serie de parámetros para anaizar diferentes aspectos. El primero que se halló fue la correlación entre las variables aleatorias. Este dato no dice mucha información por sí mismo, sin embargo es muy útil para halar la similitud entre la variables aleatorias al obtener la covarianza. Si este parámetro es cero o muy cercano a cero, se puede asumir que no hay similitud entre las variables o bien, los datos son ortogonales. Este parámetro en forma discreta se calcula de la siguiente manera:
+Para los datos originales se pidió obtener una serie de parámetros para analizar diferentes aspectos. El primero que se halló fue la correlación entre las variables aleatorias. Este dato no dice mucha información por sí mismo, sin embargo es muy útil para hallar la similitud entre la variables aleatorias al obtener la covarianza. Si este parámetro es cero o muy cercano a cero, se puede asumir que no hay similitud entre las variables o bien, los datos son ortogonales. Este parámetro en forma discreta se calcula de la siguiente manera:
 
 <img src="../master/images/ec4.png" width="300">
 
@@ -64,8 +64,6 @@ El coeficiente de pearson es otra medida de qué tan relacionados se encuentran 
 
 
 
-
-
 ## Parte 4: Curvas de mejor ajuste para las funciones de densidad marginales
 
 Para esta sección se utilizó la función definida para retornar la ecuación gaussiana evaluada en un dominio deseado y con los parámetros mu y sigma para el caso. Puesto que se desea obtener una curva continua se debe utilizar un vector con bastantes puntos para obtener mayor precisión, utilizando la librería numpy y su función linspace se generó un espacio entre (5, 15) para X y (5, 25) para Y. Una vez se tienen las imágenes de la curva gaussiana se puede graficar con matplotlib.
@@ -80,3 +78,9 @@ El caso de la gráfica de la función de densidad marginal conjuta es más compl
 <img src="../master/images/conju.png">
 
 En la curva en 3 dimensiones previa se observa que se mantiene la forma de una curva gaussiana en los ejes x y y.
+
+
+## Conclusiones
+
+Los datos brindados poseen una distribución Gaussiana tanto en el caso de X como Y. Esto quiere decir que la probabilidad de ocurrencia de las variables altatorias es mayor en un rango definido y pequeño. 
+Se pudo observar que las ecuaciones para fenómenos continuos pueden ser fácilmente modificadas para  estudiar los fenómenos discretos.
